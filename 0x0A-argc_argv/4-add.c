@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
 /**
  * check_num - check - string there are digit
- * @str: array of string
+ * @str: array str
  *
  * Return: Always 0 (Success)
  */
@@ -21,9 +20,9 @@ int check_num(char *str)
 		{
 			return (0);
 		}
-
-		count++;
+			count++;
 	}
+
 	return (1);
 }
 
@@ -51,14 +50,16 @@ int main(int argc, char *argv[])
 			sum += str_to_int;
 		}
 
-		/*Condition if ont of the number contains symbols that are not digits*/
+		/*Condition if one of the number contains symbols that are not digits*/
 		else
 		{
-			printf("Errror\n");
+			printf("Error\n");
 			return (1);
 		}
+
 		count++;
 	}
+
 
 	printf("%d\n", sum); /*print sum*/
 
