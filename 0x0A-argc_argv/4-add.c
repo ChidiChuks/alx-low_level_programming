@@ -35,7 +35,7 @@ int check_num(char *str)
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char*argv[])
+int main(int argc, char *argv[])
 {
 	/*Declaring variables*/
 	int count;
@@ -52,7 +52,8 @@ int main(int argc, char*argv[])
 		}
 
 		/*Condition if ont of the number contains symbols that are not digits*/
-		else {
+		else
+		{
 			printf("Errror\n");
 			return (1);
 		}
