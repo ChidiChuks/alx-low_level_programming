@@ -17,7 +17,7 @@ int _strlen(char *s)
 		i++;
 	}
 
-	retrun (i);
+	return (i);
 }
 /**
  * *_strcpy - copies the string pointed to by src
@@ -30,7 +30,7 @@ int _strlen(char *s)
  */
 char *_strcpy(char *dest, char *src)
 {
-	int len i;
+	int len, i;
 
 	len = 0;
 
