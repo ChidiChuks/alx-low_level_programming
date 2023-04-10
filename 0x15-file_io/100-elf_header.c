@@ -97,7 +97,7 @@ void print_data(unsigned char *e_ident)
 		case ELFDATANONE:
 			printf("none\n");
 			break;
-		case ELFDATA2LSB:
+		case  ELFDATA2LSB:
 			printf("2's complement, little endian\n");
 			break;
 		case ELFDATA2MSB:
@@ -168,7 +168,7 @@ void print_osabi(unsigned char *e_ident)
 			printf("Standalone App\n");
 			break;
 		default:
-			printf("unknown: %x>\n", e_ident[EI_OSABI]);
+			printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 	}
 }
 
