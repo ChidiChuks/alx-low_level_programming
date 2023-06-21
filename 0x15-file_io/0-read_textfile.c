@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Read text file to print Standard Outpout
+i * read_textfile- Read text file to print Standard Output
  * @filename: reading text file
  * @letters: number of letters to be read
  * Return: w- actual n0. of bytes, also print 0 when func fails or NULL
