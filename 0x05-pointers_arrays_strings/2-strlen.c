@@ -1,41 +1,21 @@
 #include "main.h"
 
 /**
- * _strlen - Convert a string to an integer
- * @s: The pointer to convert
+ * _strlen - returns the length of a string
+ * @s: string
  *
- * Return: An integer
+ * Return: the length of string
  */
 
 int _strlen(char *s)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
-	int isi = 0;
+	int longi = 0;
 
-	while (s[c])
+	while (*s != '\0')
 	{
-		if (s[c] == 45)
-		{
-			min *= -1;
-		}
-
-		while (s[c] >= 48 && s[c] <= 57)
-		{
-			isi = 1;
-			ni = (ni * 10) + (s[c] - '0');
-			c++;
-		}
-
-		if (isi == 1)
-		{
-			break;
-		}
-
-		c++;
+		longi++;
+		s++;
 	}
 
-	ni *= min;
-	return (ni);
+	return (longi);
 }
