@@ -1,3 +1,3 @@
 #!/bin/bash
-echo -e "#!/bin/bash\necho \"\$(cat /tmp/gm_numbers)\"" > /tmp/gm
-chmod +x /tmp/gm
+cp /tmp/gm_numbers ./gm
+chmod +x ./gm
